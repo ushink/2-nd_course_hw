@@ -32,10 +32,14 @@ alert (number3 % number2); //1
 
 // #7
 let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num  /= 3;
-++num ;
---num ;
-alert(num);
+num += 5; //6
+num -= 3; //3
+num *= 7; //21
+num  /= 3; //7
+++num ; //8
+--num ; //7
+alert(num); //7
+
+// #8
+let age = prompt('Сколько вам лет?');
+alert(age);

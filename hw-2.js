@@ -45,8 +45,21 @@ let age = prompt('Сколько вам лет?');
 alert(age);
 
 // #9.0
-const user = {
+let user = {
     name: 'Uyliana',
     age: 24,
     isAdmin: true,
     }
+
+// #9.1
+ user['city of residence'] = 'Saratov';
+
+ // #9.2
+ user.age = 25
+
+ // #9.3
+ delete user['city of Residence'];
+ 
+ // #9.4
+ let info = prompt('Какую информацию хотите узнать о пользователе?');
+ alert (user.info);

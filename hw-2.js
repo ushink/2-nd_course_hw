@@ -21,3 +21,7 @@ alert (number1 + number2); // 12
 alert (number1 - number2); // 8
 alert (number1 * number2); //20
 alert (number1 / number2); //5
+
+// #5
+let result = number2 ** 5;
+alert (result); //32

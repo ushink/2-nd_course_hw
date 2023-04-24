@@ -25,3 +25,7 @@ alert (number1 / number2); //5
 // #5
 let result = number2 ** 5;
 alert (result); //32
+
+// #6
+let number3 = 9;
+alert (number3 % number2); //1

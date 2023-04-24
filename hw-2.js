@@ -43,3 +43,10 @@ alert(num); //7
 // #8
 let age = prompt('Сколько вам лет?');
 alert(age);
+
+// #9.0
+const user = {
+    name: 'Uyliana',
+    age: 24,
+    isAdmin: true,
+    }

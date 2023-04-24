@@ -13,3 +13,11 @@ alert ('год выпуска первого iPhone: ' + year);
 // #3
 let useName = "Brendan Eich";
 alert ('Имя создателя языка JavaScript: ' + useName);
+
+// #4
+let number1 = 10;
+let number2 = 2;
+alert (number1 + number2); // 12
+alert (number1 - number2); // 8
+alert (number1 * number2); //20
+alert (number1 / number2); //5

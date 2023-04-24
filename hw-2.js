@@ -52,14 +52,18 @@ let user = {
     }
 
 // #9.1
- user['city of residence'] = 'Saratov';
+user['city of residence'] = 'Saratov';
 
- // #9.2
- user.age = 25
+// #9.2
+user.age = 25
 
- // #9.3
- delete user['city of Residence'];
+// #9.3
+delete user['city of Residence'];
  
- // #9.4
- let info = prompt('Какую информацию хотите узнать о пользователе?');
- alert (user.info);
+// #9.4
+let info = prompt('Какую информацию хотите узнать о пользователе?');
+alert (user.info);
+
+//#10
+let forename = prompt ('Как вас зовут?');
+alert (`Привет, ${forename}!`)

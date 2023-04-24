@@ -29,3 +29,13 @@ alert (result); //32
 // #6
 let number3 = 9;
 alert (number3 % number2); //1
+
+// #7
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num  /= 3;
+++num ;
+--num ;
+alert(num);

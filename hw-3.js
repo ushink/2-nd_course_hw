@@ -19,3 +19,12 @@ if (d > 100 || e > 100) {
 } else {
     console.log ('Неверно');
 }
+
+//#4
+let a = '2';
+let b = '3';
+let number1 = 5 - a;
+a = number1;
+let number2 = 5 - b;
+b = number2;
+alert(a + b);

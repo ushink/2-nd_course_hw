@@ -10,3 +10,12 @@ if (c > 0 && c < 10) {
 } else {
     console.log ('Неверно');
 }
+
+//#3
+let d = Number (999);
+let e = Number (55);
+if (d > 100 || e > 100) {
+    console.log ('Верно');
+} else {
+    console.log ('Неверно');
+}

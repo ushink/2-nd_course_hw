@@ -94,5 +94,22 @@ if (clientOS == 0) {
 } else if (clientOS == 1){
     alert ('Установите версию приложения для Android по ссылке');
 } else {
+    alert ('Внимательно прочитайте задание'); // я бы после этого добавила цикл чтобы вернул обратно на ввод данных
+}
+
+//#9
+let clientDeviceYear = prompt ('Введите год выпуска телефона');
+
+if (clientOS == 0 && clientDeviceYear < 2015) {
+    alert ('Установите облегченную версию приложения для iOS по ссылке');
+} else if (clientOS == 0 && clientDeviceYear >= 2015){
+    alert ('Установите версию приложения для iOS по ссылке');
+
+} else if (clientOS == 1 && clientDeviceYear < 2015){
+    alert ('Установите облегченную версию приложения для Android по ссылке');
+} else if (clientOS == 1 && clientDeviceYear >= 2015){
+    alert ('Установите версию приложения для Android по ссылке');
+
+} else {
     alert ('Внимательно прочитайте задание');
 }

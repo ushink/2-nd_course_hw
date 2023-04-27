@@ -74,3 +74,14 @@ switch (monthNumber) {
         break;
 }
 
+//#6
+let num = prompt ('Пожалуйста, введите любое число');
+const control = num => !isNaN(num);
+if (num % 2 === 0) {
+    alert ('Число четное');
+} else if (num % 2 === 1){
+    alert ('Число нечетное');
+} else {
+    alert ('Попробуй еще');
+}
+   

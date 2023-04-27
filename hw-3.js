@@ -74,7 +74,9 @@ switch (monthNumber) {
         break;
 }
 
-//#6
+//#6 style.css
+
+//#7
 let num = prompt ('Пожалуйста, введите любое число');
 const control = num => !isNaN(num);
 if (num % 2 === 0) {
@@ -84,4 +86,13 @@ if (num % 2 === 0) {
 } else {
     alert ('Попробуй еще');
 }
-   
+ 
+//#8
+let clientOS = prompt('Если вы используете Android, введите 1, если iOS введите 0 ');
+if (clientOS == 0) {
+    alert ('Установите версию приложения для iOS по ссылке');
+} else if (clientOS == 1){
+    alert ('Установите версию приложения для Android по ссылке');
+} else {
+    alert ('Внимательно прочитайте задание');
+}

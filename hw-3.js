@@ -73,3 +73,4 @@ switch (monthNumber) {
         console.log ('Упс.. Ввел что-то не то')
         break;
 }
+

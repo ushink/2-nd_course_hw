@@ -18,9 +18,9 @@ while (a <= 5) {
 
 //#3
 
-for (let num = 7; num <= 22; num++) {
+for (let b = 7; b <= 22; b++) {
     
-    console.log (num); // 7 8 9...22
+    console.log (b); // 7 8 9...22
 }
 
 //#4
@@ -32,5 +32,17 @@ let salary = {
 }
 
 for (const key in salary) {
-    console.log ( `${key} - зарплата ${salary[key]} `)
+    console.log ( `${key} - зарплата ${salary[key]} долларов.`)
 }
+
+//#5
+
+let n = 1000;
+let num = 0;
+
+do {
+    n = n/2;
+    num++;
+} while (n >= 50);
+
+console.log (num); // 5

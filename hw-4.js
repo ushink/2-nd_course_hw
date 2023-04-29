@@ -46,3 +46,14 @@ do {
 } while (n >= 50);
 
 console.log (num); // 5
+
+//#6
+
+for (let fri = 5, day = 1; day <= 31; day++) {
+
+    if ( day % fri == 0) {
+        console.log (`Сегодня пятница, ${fri}-е число. Необходимо подготовить отчет.`);
+        fri = fri + 7;
+    }
+    
+}

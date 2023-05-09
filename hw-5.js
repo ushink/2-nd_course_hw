@@ -37,3 +37,23 @@ console.log (square1(6)); // 36
 const square2 = (m) => m * m ;
 
 console.log (square2(5));
+
+//#4
+
+function sayHello() {
+    let age = prompt ('Сколько вам лет?');
+    if (age >= 0 && age <= 12) {
+        alert ('Привет, друг!');
+
+    } else if (age >= 13) {
+        alert ('Добро пожаловать!');
+
+    }
+    else {
+        alert ('Вы ввели неправильное значение');
+    
+    }
+}
+
+
+

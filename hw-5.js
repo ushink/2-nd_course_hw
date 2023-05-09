@@ -54,6 +54,7 @@ function sayHello() {
     
     }
 }
+sayHello();
 
 //#5
 
@@ -78,6 +79,37 @@ let number3 = () => {
 
     } else {
         return `${n} в кубе равняется ${n*n*n}`;
-        
+
     }
 }
+alert(number3());
+
+//#7
+
+function getArea () {
+    console.log (Math.PI * this.radius * this.radius);
+}
+
+function getPerimeter() {
+    console.log (2 * Math.PI * this.radius);
+}
+
+const circle1 = {
+    radius: 20,
+    getArea: getArea,
+    getPerimeter: getPerimeter,
+}
+
+const circle2 = {
+    radius: 5,
+    getArea: getArea,
+    getPerimeter: getPerimeter,
+}
+
+circle1.getArea();
+circle1.getPerimeter();
+circle2.getArea();
+circle2.getPerimeter();
+
+
+

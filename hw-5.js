@@ -55,5 +55,18 @@ function sayHello() {
     }
 }
 
+//#5
+
+let number2 = (a, b) => {
+    if (isNaN(a) || isNaN (b)) {
+        return 'Одно или оба значения не являются числом';
+
+    } else {
+        return a * b;
+    }
+}
+
+ console.log (number2 ('2', 'df')); // Одно или оба значения не являются числом
+ console.log (number2 ('2', '6')); // 12
 
 

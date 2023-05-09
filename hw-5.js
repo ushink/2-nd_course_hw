@@ -1,6 +1,6 @@
 //#1
 
-function comparison (a, b) {
+function comparison(a, b) {
     if (a > b) {
         console.log (b); 
     } else {
@@ -8,5 +8,19 @@ function comparison (a, b) {
     }
 }
 
- comparison (8, 4);
- comparison (6, 6);
+ comparison (8, 4); // 4
+ comparison (6, 6); // 6
+
+ //#2
+
+ function number(c) {
+    if (c % 2 == 0) {
+        console.log ('Число четное');
+    } else {
+        console.log ('Число нечетное');
+    }
+ }
+
+ number (5); // Число нечетное
+ number (80); // Число четное
+ number (0); // Число четное

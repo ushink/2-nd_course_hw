@@ -66,7 +66,18 @@ let number2 = (a, b) => {
     }
 }
 
- console.log (number2 ('2', 'df')); // Одно или оба значения не являются числом
- console.log (number2 ('2', '6')); // 12
+console.log (number2 ('2', 'df')); // Одно или оба значения не являются числом
+console.log (number2 ('2', '6')); // 12
 
+// #6
 
+let number3 = () => {
+    const n = prompt('Введите число');
+    if (isNaN(n)) {
+        return 'Переданный параметр не является числом';
+
+    } else {
+        return `${n} в кубе равняется ${n*n*n}`;
+        
+    }
+}

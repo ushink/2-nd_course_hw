@@ -39,3 +39,11 @@ const numbers4 = [1, 1, 1];
 
 const result2 = numbers4.push(2, 2, 2);
 console.log (numbers4);
+
+//#6
+
+const numb = [9, 8, 7, 'a', 6, 5];
+
+const sort = numb.sort();
+const pop = numb.pop();
+console.log (numb);

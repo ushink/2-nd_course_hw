@@ -65,11 +65,10 @@ console.log (search);
 
 //#8
 
-/*
+
 var str = ['abcdef'];
-var strRevers = str.split('').reverse().join('');
+var strRevers = String(str).split('').reverse().join('');
 console.log (strRevers);
-*/
 
 //#9
 
@@ -78,4 +77,4 @@ let arr2 = [
     [4, 5, 6],
 ];
 
-console.log (arr2.join(','));
+console.log (String(arr2).split(' ').join(', ')); // 1, 2, 3, 4, 5, 6

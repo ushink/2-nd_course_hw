@@ -17,3 +17,10 @@ numbers2.forEach((el, index) => {
         console.log (index);
     }
 });
+
+//#3
+
+const numbers3 = [1, 3, 5, 10, 20];
+
+const result = numbers3.join(' ');
+console.log (result);

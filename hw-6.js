@@ -55,13 +55,13 @@ console.log (numb);
 
 //#7
 
-/*
+
 let numb2 = [9, 8, 7, 6, 5];
 
 let c = prompt('Введите число от 1 до 10');
-let search = numb2.includes(c);
+let search = String(numb2).includes(c);
 console.log (search);
-*/
+
 
 //#8
 

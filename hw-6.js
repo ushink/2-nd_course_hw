@@ -4,7 +4,7 @@ const numbers = [1, 5, 4, 10, 0, 3];
 
 for (let a = 0; a < numbers.length; a++) {
     if (numbers[a] == 10) break;
-    console.log (numbers[a]);
+    console.log (numbers[a]); //1 5 4
     
 }
 
@@ -12,11 +12,17 @@ for (let a = 0; a < numbers.length; a++) {
 
 const numbers2 = [1, 5, 4, 10, 0, 3];
 
+const i = numbers2.indexOf(4);
+console.log (i); //2
+
+/* или можно так
+
 numbers2.forEach((el, index) => {
     if (el == 4) {
         console.log (index);
     }
 });
+*/
 
 //#3
 
@@ -44,6 +50,32 @@ console.log (numbers4);
 
 const numb = [9, 8, 7, 'a', 6, 5];
 
-const sort = numb.sort();
-const pop = numb.pop();
+const sort = numb.sort().pop();
 console.log (numb);
+
+//#7
+
+/*
+let numb2 = [9, 8, 7, 6, 5];
+
+let c = prompt('Введите число от 1 до 10');
+let search = numb2.includes(c);
+console.log (search);
+*/
+
+//#8
+
+/*
+var str = ['abcdef'];
+var strRevers = str.split('').reverse().join('');
+console.log (strRevers);
+*/
+
+//#9
+
+let arr2 = [
+    [1, 2, 3,],
+    [4, 5, 6],
+];
+
+console.log (arr2.join(','));

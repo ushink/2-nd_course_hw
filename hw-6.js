@@ -32,3 +32,10 @@ arr [0] = [1, 1, 1];
 arr [1] = [1, 1, 1];
 arr [2] = [1, 1, 1];
 console.log (arr);
+
+//#5
+
+const numbers4 = [1, 1, 1];
+
+const result2 = numbers4.push(2, 2, 2);
+console.log (numbers4);

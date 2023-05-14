@@ -66,8 +66,8 @@ console.log (search);
 //#8
 
 
-var str = ['abcdef'];
-var strRevers = String(str).split('').reverse().join('');
+var str = 'abcdef';
+var strRevers = str.split('').reverse().join('');
 console.log (strRevers); // fedcba
 
 //#9
@@ -81,14 +81,13 @@ console.log (String(arr2).split(' ').join(', ')); // 1, 2, 3, 4, 5, 6
 
 //#10
 
-/*
-var rand = [6, 8, 9, 10, 7, 5, 4, 3, 2, 1];
 
-for (let i = 0; i < rand.length; i++) {
-    a=sum (rand[i]+[rand [i+1]]);
-    console.log (a);
+const rand = [6, 8, 9, 10, 7, 5, 4, 3, 2, 1];
+
+for (let i = 0; i < rand.length - 1; i++) {
+    console.log (rand[i]+ rand [i + 1]);
 }
-*/
+
 
 //#11
 
@@ -96,3 +95,6 @@ const rand2 = [0, 8, 9, 10, 7, 5, 4, 3, 2, 1];
 if (Number.isInteger(rand2[i])) {
     console.log(rand2.map(item => (Math.pow(item, 2))));
 }
+
+//#12
+

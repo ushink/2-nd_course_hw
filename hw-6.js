@@ -91,10 +91,16 @@ for (let i = 0; i < rand.length - 1; i++) {
 
 //#11
 
-const rand2 = [0, 8, 9, 10, 7, 5, 4, 3, 2, 1];
-if (Number.isInteger(rand2[i])) {
-    console.log(rand2.map(item => (Math.pow(item, 2))));
+function random(arr){
+    return arr.map(item => (Math.pow(item, 2)));
 }
+
+console.log (random([0, 8, 9, 10, 7, 5, 4, 3, 2, 1])); // 0, 64, 81, 100, 49, 25, 16, 9, 4, 1
 
 //#12
 
+function getLengthWords(arr){
+    return arr.map((it) => it.length);
+}
+
+console.log(getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква'])); // [5, 0, 4, 19, 5]

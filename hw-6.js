@@ -104,3 +104,14 @@ function getLengthWords(arr){
 }
 
 console.log(getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква'])); // [5, 0, 4, 19, 5]
+
+//#13
+
+function filterPositive(array) {
+    return array.filter((el) => el < 0);
+  }
+  
+console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
+console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
+    
+  

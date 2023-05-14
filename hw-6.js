@@ -114,4 +114,30 @@ function filterPositive(array) {
 console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
 console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
     
+//#14
+
+const generateArray = (length, max) => (
+    [...new Array(length)]
+      .map(() => Math.round(Math.random() * max))
+  );
   
+  const num = generateArray(10, 10);
+  console.log(num); //[6, 5, 0, 2, 2, 5, 10, 2, 1, 4]
+  console.log(num.filter((el) => el % 2 == 0)); //[6, 0, 2, 2, 10, 2, 4]
+
+  //#15
+/*
+вернуться после изучения урока "Встроенные объекты" и приступить к решению ещё раз.
+
+  const getArray = (length, max) => (
+    [...new Array(length)]
+      .map(() => Math.round(Math.random() * max))
+      
+  );
+  
+  const num9 = getArray(6, 10);
+  const f = (num9.reduce((acc, max) => acc + max, 0)) / length;
+  console.log(num9); 
+  console.log(f); 
+
+ */

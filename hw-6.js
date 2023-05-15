@@ -3,8 +3,8 @@
 const numbers = [1, 5, 4, 10, 0, 3];
 
 for (let a = 0; a < numbers.length; a++) {
-    if (numbers[a] == 10) break;
-    console.log (numbers[a]); //1 5 4
+    console.log (numbers[a]);
+    if (numbers[a] == 10) break; //1 5 4 10
     
 }
 
@@ -33,10 +33,17 @@ console.log (result);
 
 //#4
 
-let arr = [];
-arr [0] = [1, 1, 1];
-arr [1] = [1, 1, 1];
-arr [2] = [1, 1, 1];
+const arr = [];
+
+for (let i = 0; i < 3; i++) {
+    arr [i] = [];
+
+    for (let j = 0; j < 3; j++) {
+        arr [i][j] = 1;
+        
+    }
+}
+
 console.log (arr);
 
 //#5
@@ -55,13 +62,10 @@ console.log (numb);
 
 //#7
 
-
 let numb2 = [9, 8, 7, 6, 5];
 
-let c = prompt('Введите число от 1 до 10');
-let search = String(numb2).includes(c);
-console.log (search);
-
+numb2 = String(numb2).includes(prompt('Введите число от 1 до 10'));
+console.log (numb2);
 
 //#8
 
@@ -77,7 +81,7 @@ let arr2 = [
     [4, 5, 6],
 ];
 
-console.log (String(arr2).split(' ').join(', ')); // 1, 2, 3, 4, 5, 6
+console.log (arr2.flat()); // [1, 2, 3, 4, 5, 6]
 
 //#10
 
@@ -91,11 +95,17 @@ for (let i = 0; i < rand.length - 1; i++) {
 
 //#11
 
-function random(arr){
-    return arr.map(item => (Math.pow(item, 2)));
-}
+const generateArra1 = (length, max) => (
+    [...new Array(length)]
+      .map(() => Math.round(Math.random() * max))
+      
+  );
+  
+const num10 = generateArra1(4, 10);
 
-console.log (random([0, 8, 9, 10, 7, 5, 4, 3, 2, 1])); // 0, 64, 81, 100, 49, 25, 16, 9, 4, 1
+console.log (num10); //[7, 8, 1, 9]
+console.log (num10.map(item => (Math.pow(item, 2)))); //[49, 64, 1, 81]
+
 
 //#12
 

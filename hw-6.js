@@ -64,7 +64,7 @@ console.log (numb);
 
 let numb2 = [9, 8, 7, 6, 5];
 
-numb2 = String(numb2).includes(prompt('Введите число от 1 до 10'));
+numb2 = String(numb2).includes(Number(prompt('Введите число от 1 до 10')));
 console.log (numb2);
 
 //#8

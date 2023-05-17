@@ -38,3 +38,38 @@ function getRandom(min, max) {
 
 }
 console.log (getRandom(1, 10));
+
+//#6
+
+/*
+const getRandomArrNumbers = (max) => {
+    let length = Math.round(max/2);
+    [...new Array (length)]
+     .map(() => Math.round(Math.random() * max)) ;
+    
+}
+const number = getRandomArrNumbers(7);
+console.log(number);
+
+ 
+
+//#7
+
+function getInteger(a, b) {
+    if (a > b) {
+        return Math.round(Math.random() * (a - b)) + b;
+    }
+    
+}
+
+let a = Math.round(Math.random() * 10000);
+let b = Math.round(Math.random() * 10000);
+
+console.log (getInteger(a,b))
+
+*/
+
+//#8
+
+let myDate = new Date();
+console.log (myDate);

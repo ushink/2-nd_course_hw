@@ -23,3 +23,13 @@ console.log(Math.floor(num)); // 32 ; До меньшего целого
 console.log(Math.ceil(num)); // 33 ; До большего целого
 console.log(Math.round(num)); // 33 ; До ближайшего целого
 
+//#4
+
+
+//#5
+
+function getRandom(min, max) {
+    return Math.round(Math.random() * (max - min)) + min;
+
+}
+console.log (getRandom(1, 10));

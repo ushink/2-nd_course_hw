@@ -25,6 +25,11 @@ console.log(Math.round(num)); // 33 ; До ближайшего целого
 
 //#4
 
+const numbers = [52, 53, 49, 77, 21, 32]; // исходный массив
+
+const minNumber = Math.min(...numbers);
+const maxNumber = Math.max(...numbers);
+console.log(`Минимальное число: ${minNumber}, Максимальное число: ${maxNumber}`);
 
 //#5
 

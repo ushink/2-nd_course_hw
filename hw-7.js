@@ -73,3 +73,10 @@ console.log (getInteger(a,b))
 
 let myDate = new Date();
 console.log (myDate);
+
+//#9
+
+let currentDate = new Date();
+
+currentDate.setHours(24*73);
+console.log(currentDate);

@@ -80,3 +80,17 @@ let currentDate = new Date();
 
 currentDate.setHours(24*73);
 console.log(currentDate);
+
+//#10
+
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+let myDate2 = new Date();
+
+let fullDate = `Дата: ${myDate.getDate()} ${months[myDate.getMonth()]} ${myDate.getFullYear()}`;
+
+let fullTime = `Время: ${myDate.getHours()}:${myDate.getMinutes()}:${myDate.getSeconds()}`;
+
+console.log(fullDate);
+console.log(fullTime);

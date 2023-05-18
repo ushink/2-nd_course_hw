@@ -41,33 +41,25 @@ console.log (getRandom(1, 10));
 
 //#6
 
-/*
-const getRandomArrNumbers = (max) => {
-    let length = Math.round(max/2);
-    [...new Array (length)]
-     .map(() => Math.round(Math.random() * max)) ;
-    
+function getRandomArrNumbers(num) {
+    const arr = []; // пустой массив
+    let length = Math.floor(num/2); // длина в два раза меньше заданного числа
+    for (let i = 0; i < length; i++) {
+        arr.push(num);  
+    }
+    return arr.map(() => (Math.round(Math.random() * num))); // создает новый массив с указаниями
 }
-const number = getRandomArrNumbers(7);
-console.log(number);
-
- 
+console.log(getRandomArrNumbers(7));
+console.log(getRandomArrNumbers(12));
 
 //#7
 
-function getInteger(a, b) {
-    if (a > b) {
-        return Math.round(Math.random() * (a - b)) + b;
-    }
-    
+function getInteger(min, max) {
+    return Math.round(Math.random() * (max - min)) + min;
+
 }
+console.log (getRandom(50, 100));
 
-let a = Math.round(Math.random() * 10000);
-let b = Math.round(Math.random() * 10000);
-
-console.log (getInteger(a,b))
-
-*/
 
 //#8
 
@@ -78,7 +70,7 @@ console.log (myDate);
 
 let currentDate = new Date();
 
-currentDate.setHours(24*73);
+currentDate.setHours(24*73); // не додумалась как сделать через getDate() и setDate()
 console.log(currentDate);
 
 //#10
@@ -86,11 +78,11 @@ console.log(currentDate);
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
 "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
-let myDate2 = new Date();
+let newDate = new Date();
 
-let fullDate = `Дата: ${myDate.getDate()} ${months[myDate.getMonth()]} ${myDate.getFullYear()}`;
+let fullDate = `Дата: ${newDate.getDate()} ${months[newDate.getMonth()]} ${newDate.getFullYear()}`;
 
-let fullTime = `Время: ${myDate.getHours()}:${myDate.getMinutes()}:${myDate.getSeconds()}`;
+let fullTime = `Время: ${newDate.getHours()}:${newDate.getMinutes()}:${newDate.getSeconds()}`;
 
 console.log(fullDate);
 console.log(fullTime);

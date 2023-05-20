@@ -73,6 +73,20 @@ let currentDate = new Date();
 currentDate.setHours(24*73); // не додумалась как сделать через getDate() и setDate()
 console.log(currentDate);
 
+/*
+let currentDate = new Date(); // Создаем переменную currentDate и сохраняем в ней текущую дату
+console.log("Текущая дата: " + currentDate); // Выводим текущую дату
+
+// Создаем новую дату, добавляя 73 дня к текущей
+let futureDate = new Date();
+futureDate.setDate(currentDate.getDate() + 73);
+
+// Выводим дату, которая наступит через 73 дня после текущей
+console.log("Дата через 73 дня: " + futureDate);
+
+*/
+
+
 //#10
 
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",

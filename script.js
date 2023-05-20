@@ -12,3 +12,23 @@ function playGame1() {
         alert ('Попробуй ещё раз');
     }
 }
+
+function playGame2() {
+    const fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    alert (fruits.sort(() => Math.random() - 0.5));
+
+    let shift = fruits.shift().toUpperCase();
+    let pop = fruits.pop().toUpperCase();
+
+    let first = (prompt ('Чему равнялся первый элемент массива?').toUpperCase());
+    let last = (prompt ('Чему равнялся последний элемент массива?').toUpperCase());
+    
+    if (first == shift && last == pop) {
+        alert ('Молодец! Угадал!');
+    } else if (first == shift || last == pop) {
+        alert ('Вы были близки к победе!');
+    } else {
+        alert ('Не угадал');
+    }
+   
+}

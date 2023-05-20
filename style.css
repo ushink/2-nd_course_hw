@@ -114,13 +114,14 @@ body{
     background-size: cover;
     background-position: center;
 }
-.play-game_1{
+.play-game{
     padding-top: 282px;
     padding-bottom: 282px;
     display: flex;
     align-items: center;
     gap: 135px;
 }
+
 .play-content{
     display: flex;
     flex-direction: column;
@@ -201,12 +202,17 @@ body{
         width: 343px;
     }
 
-    .play-game_1{
+    .play-game{
         padding-top: 51px;
         padding-bottom: 85px;
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    .game_2{
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .play-content{

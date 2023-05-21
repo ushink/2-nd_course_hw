@@ -44,13 +44,10 @@ function isMale(whoIS) {
 }
 
 function filter(arr, ruleFunction) {
-    const output = [];
-
     for (let i = 0; i < arr.length; i++) {
-    output.push(ruleFunction(arr[i]));
-    }
+    return arr.filter(ruleFunction);
 
-    return output;
+    }
 }
 
     

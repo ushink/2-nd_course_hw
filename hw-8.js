@@ -67,7 +67,7 @@ function filter(arr, ruleFunction) {
     console.log(filter(people2, isMale)); 
     // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
 
-/*
+
     //#3
     const timer = (deadline) => {
         let time = deadline;
@@ -84,7 +84,7 @@ function filter(arr, ruleFunction) {
     
     timer(30);
 
-*/
+
 
 //#4
 
@@ -97,3 +97,27 @@ delayForSecond(function () {
   console.log('Привет, Глеб!');
 })
 
+//#5
+
+// Функция delayForSecond через 1 секунду пишет в консоль «Прошла одна секунда», 
+// а затем вызывает переданный колбэк
+
+function delayForSecond2(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+				if(cb) { 	cb(); }
+
+    }, 1000)
+}
+
+// Функция sayHi выводит в консоль приветствие для указанного имени
+
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
+
+// Код выше менять нельзя
+
+// Нужно изменить код ниже:
+
+delayForSecond2(sayHi('Глеб'), delayForSecond2);

@@ -66,3 +66,20 @@ function filter(arr, ruleFunction) {
     
     console.log(filter(people2, isMale)); 
     // Должен выводить [{name: 'Глеб', gender: 'male'},  {name: 'Олег', gender: 'male'}]
+
+
+    //#3
+    const timer = (deadline) => {
+        let time = deadline;
+        const interval = setInterval(() => {
+            time -= 1;
+            console.log(new Date());
+        }, 3000);
+    
+        setTimeout(() => {
+            clearInterval(interval);
+            console.log('30 секунд прошло')
+        }, deadline * 1000)
+    };
+    
+    timer(30);

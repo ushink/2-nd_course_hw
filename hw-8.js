@@ -1,3 +1,4 @@
+
 //#1
 
 const people = [
@@ -117,4 +118,4 @@ function sayHi (name) {
 
 // Нужно изменить код ниже:
 
-delayForSecond2(sayHi('Глеб'), delayForSecond2);
+delayForSecond2(() => sayHi('Глеб'));
